@@ -228,7 +228,8 @@
                 <div class="flex justify-center mb-6">
                     <img src="https://i.postimg.cc/qvZV9JxB/Gemini-Generated-Image-17sreb17sreb17sr-(1).png"
                         alt="Sintomas da Candidíase"
-                        class="w-full max-w-xs h-auto rounded-xl shadow-lg mix-blend-multiply" loading="lazy" />
+                        class="w-full max-w-xs h-auto rounded-xl shadow-lg mix-blend-multiply" loading="lazy"
+                        decoding="async" />
                 </div>
                 <h2 class="text-2xl md:text-4xl font-extrabold text-brand-dark leading-tight mb-4">
                     Se você está vivendo isso:
@@ -354,7 +355,7 @@
                     <img src="https://i.postimg.cc/P5bfsNMG/Design-sem-nome-(4).png"
                         alt="Ilustração do ciclo da candidíase"
                         class="w-full max-w-sm h-auto rounded-3xl shadow-2xl border-4 border-brand-light/20 hover:scale-105 transition-transform duration-500"
-                        loading="lazy" />
+                        loading="lazy" decoding="async" />
                 </div>
 
                 <p>
@@ -662,7 +663,7 @@
         <div class="container mx-auto px-4 max-w-5xl flex justify-center">
             <img src="https://i.postimg.cc/x1smDs5r/Gemini-Generated-Image-xf6uhbxf6uhbxf6u.png"
                 alt="Ilustração mulheres felizes" class="w-full h-auto rounded-3xl shadow-lg border-4 border-white"
-                loading="lazy" />
+                loading="lazy" decoding="async" />
         </div>
     </div>
 
@@ -740,7 +741,7 @@
             <div class="shrink-0">
                 <img src="https://i.postimg.cc/B6zmW3tG/Design-sem-nome-(3).png" alt="Nutricionista Bruna Wassouf"
                     class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-brand-bg shadow-xl"
-                    loading="lazy" />
+                    loading="lazy" decoding="async" />
             </div>
             <div class="text-center md:text-left">
                 <span class="uppercase text-brand-primary text-sm font-bold tracking-widest mb-2 block">A
@@ -753,7 +754,7 @@
                 </p>
                 <div class="mt-4 flex items-center justify-center md:justify-start gap-2">
                     <img src="https://i.postimg.cc/FsdkTr67/7641727.png" alt="Verificado" class="w-5 h-5 opacity-75"
-                        loading="lazy" />
+                        loading="lazy" decoding="async" />
                     <span class="text-sm text-slate-500 font-medium">CRN 19615</span>
                 </div>
             </div>
@@ -769,25 +770,25 @@
                 <div class="group">
                     <img src="https://i.postimg.cc/fLmCWrDW/IMG-3811.jpg" alt="Depoimento 1"
                         class="w-full h-auto rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 group-hover:scale-[1.02] transition-transform duration-300"
-                        loading="lazy" />
+                        loading="lazy" decoding="async" />
                 </div>
                 <!-- P2 -->
                 <div class="group">
                     <img src="https://i.postimg.cc/pXxGrR9b/IMG-1572.jpg" alt="Depoimento 2"
                         class="w-full h-auto rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 group-hover:scale-[1.02] transition-transform duration-300"
-                        loading="lazy" />
+                        loading="lazy" decoding="async" />
                 </div>
                 <!-- P3 -->
                 <div class="group">
                     <img src="https://i.postimg.cc/XJCHGvcK/IMG-1279.jpg" alt="Depoimento 3"
                         class="w-full h-auto rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 group-hover:scale-[1.02] transition-transform duration-300"
-                        loading="lazy" />
+                        loading="lazy" decoding="async" />
                 </div>
                 <!-- P4 (Novo) -->
                 <div class="group">
                     <img src="https://i.postimg.cc/YCh3V9G0/IMG-1972.jpg" alt="Depoimento 4"
                         class="w-full h-auto rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 group-hover:scale-[1.02] transition-transform duration-300"
-                        loading="lazy" />
+                        loading="lazy" decoding="async" />
                 </div>
             </div>
         </div>
@@ -1120,47 +1121,40 @@
 
     <!-- ================= TRACKING ================= -->
 
-    <!-- META PIXEL -->
-    <script>
-        try {
-            !function (f, b, e, v, n, t, s) {
-                if (f.fbq) return; n = f.fbq = function () {
-                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                };
-                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-                n.queue = []; t = b.createElement(e); t.async = !0;
-                t.src = v; s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s)
-            }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    <!-- META PIXEL (Defer Pattern) -->
+    <script defer>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.defer = true;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
 
-            fbq('init', '611806261547032');
-            fbq('track', 'PageView');
-        } catch (e) {
-            console.warn('Pixel falhou', e);
-        }
+        fbq('init', '611806261547032');
+        fbq('track', 'PageView');
     </script>
-
     <noscript>
         <img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=611806261547032&ev=PageView&noscript=1" />
     </noscript>
 
-    <!-- MICROSOFT CLARITY -->
+    <!-- MICROSOFT CLARITY (Delayed) -->
     <script>
-        try {
+        setTimeout(function () {
             (function (c, l, a, r, i, t, y) {
                 c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-                t = l.createElement(r); t.async = 1;
-                t.src = "https://www.clarity.ms/tag/" + i;
-                y = l.getElementsByTagName(r)[0];
-                y.parentNode.insertBefore(t, y);
+                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
             })(window, document, "clarity", "script", "v9oc8iipxs");
-        } catch (e) {
-            console.warn('Clarity falhou', e);
-        }
+        }, 3000);
     </script>
 
-    <!-- UTMIFY (UMA VEZ, COM DEFER) -->
+    <!-- UTMIFY (Defer) -->
     <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" defer></script>
 </body>
 
