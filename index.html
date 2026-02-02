@@ -21,38 +21,10 @@
         rel="stylesheet">
 
     <!-- Tailwind CSS (Estilos) -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 
-    <!-- Configuração do Tailwind (Cores e Fontes) -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Montserrat', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            dark: '#74131c',      // Deep Maroon/Red
-                            primary: '#9d1f28',   // Vibrant Red
-                            secondary: '#c06264', // Muted Rose/Red
-                            light: '#e4aaa7',     // Pale Pink
-                            bg: '#f9f5f4',        // Off-white/Cream
-                        }
-                    },
-                    animation: {
-                        'pulse-subtle': 'pulse-subtle 2s infinite ease-in-out',
-                    },
-                    keyframes: {
-                        'pulse-subtle': {
-                            '0%, 100%': { transform: 'scale(1)' },
-                            '50%': { transform: 'scale(1.03)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Preconnect para Imagens -->
+    <link rel="preconnect" href="https://i.postimg.cc">
 
     <!-- Ícones Lucide -->
 
@@ -228,8 +200,8 @@
                 <div class="flex justify-center mb-6">
                     <img src="https://i.postimg.cc/qvZV9JxB/Gemini-Generated-Image-17sreb17sreb17sr-(1).png"
                         alt="Sintomas da Candidíase"
-                        class="w-full max-w-xs h-auto rounded-xl shadow-lg mix-blend-multiply" loading="lazy"
-                        decoding="async" />
+                        class="w-full max-w-xs h-auto rounded-xl shadow-lg mix-blend-multiply" loading="eager"
+                        fetchpriority="high" decoding="async" />
                 </div>
                 <h2 class="text-2xl md:text-4xl font-extrabold text-brand-dark leading-tight mb-4">
                     Se você está vivendo isso:
