@@ -8,43 +8,41 @@
     <meta name="description"
         content="Quebre o Ciclo da Candidíase de Repetição e dos Fungos no Corpo — Método Natural em 21 Dias.">
 
-    <!-- 1) UTMIFY – CAPTURA DE UTMs + BACK REDIRECT -->
+    <!-- 1) UTMIFY – Captura de UTMs -->
     <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
         data-utmify-prevent-subids async defer></script>
 
     <!-- 2) META PIXEL (FACEBOOK) -->
-    <!-- META PIXEL (DOMContentLoaded Pattern) -->
-    <script defer>
-        document.addEventListener('DOMContentLoaded', function () {
-            !function (f, b, e, v, n, t, s) {
-                if (f.fbq) return; n = f.fbq = function () {
-                    n.callMethod ?
-                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                };
-                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-                n.queue = []; t = b.createElement(e); t.async = !0;
-                t.src = v; s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s)
-            }(window, document, 'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
 
-            fbq('init', '611806261547032');
-            fbq('track', 'PageView');
-        });
+        fbq('init', '611806261547032');
+        fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=611806261547032&ev=PageView&noscript=1" /></noscript>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=611806261547032&ev=PageView&noscript=1" />
+    </noscript>
 
     <!-- 3) MICROSOFT CLARITY -->
-    <!-- MICROSOFT CLARITY (DOMContentLoaded) -->
-    <script defer>
-        document.addEventListener('DOMContentLoaded', function () {
-            (function (c, l, a, r, i, t, y) {
-                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-            })(window, document, "clarity", "script", "v9oc8iipxs");
-        });
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "v9oc8iipxs");
     </script>
 
     <!-- Google Fonts: Montserrat -->
@@ -762,8 +760,14 @@
 
                 <!-- CTA Button (Retained Style, New Container) -->
                 <div class="shine-border bg-brand-bg/30 p-2 rounded-full mb-6 max-w-sm mx-auto relative group">
-                    <a href="https://one-health-wa.pay.yampi.com.br/r/P1T29RXPKE" data-utmify
-                        onclick="initiateCheckout(event)"
+                    <a href="https://one-health-wa.pay.yampi.com.br/r/P1T29RXPKE" data-utmify onclick="
+                            fbq('track', 'InitiateCheckout', {
+                                value: 67.00,
+                                currency: 'BRL'
+                            });
+                            setTimeout(() => window.location = this.href, 300);
+                            return false;
+                        "
                         class="flex items-center justify-center w-full bg-brand-primary hover:bg-brand-dark text-white font-bold py-4 rounded-full shadow-lg transition-all transform hover:scale-[1.02] active:scale-95 text-base md:text-lg uppercase tracking-wide group animate-pulse-subtle">
                         <span>ACESSO IMEDIATO</span>
                         <i data-lucide="arrow-right"
@@ -955,25 +959,6 @@
 
     <!-- SCRIPTS -->
     <script>
-        function initiateCheckout(event) {
-            if (event) event.preventDefault();
-
-            // Garantia de disparo dos eventos
-            if (typeof fbq === 'function') {
-                fbq('track', 'InitiateCheckout');
-            }
-            if (typeof clarity === 'function') {
-                clarity('set', 'cta', 'checkout');
-            }
-
-            // Redirecionamento seguro após 150ms
-            if (event) {
-                const targetUrl = event.currentTarget.href;
-                setTimeout(function () {
-                    window.location.href = targetUrl;
-                }, 150);
-            }
-        }
         lucide.createIcons();
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
