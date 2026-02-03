@@ -8,11 +8,44 @@
     <meta name="description"
         content="Quebre o Ciclo da Candidíase de Repetição e dos Fungos no Corpo — Método Natural em 21 Dias.">
 
+    <!-- 1) UTMIFY – CAPTURA DE UTMs + BACK REDIRECT -->
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
+        data-utmify-prevent-subids async defer></script>
 
+    <!-- 2) META PIXEL (FACEBOOK) -->
+    <!-- META PIXEL (DOMContentLoaded Pattern) -->
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function () {
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
 
+            fbq('init', '611806261547032');
+            fbq('track', 'PageView');
+        });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=611806261547032&ev=PageView&noscript=1" /></noscript>
 
-
-
+    <!-- 3) MICROSOFT CLARITY -->
+    <!-- MICROSOFT CLARITY (DOMContentLoaded) -->
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function () {
+            (function (c, l, a, r, i, t, y) {
+                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+            })(window, document, "clarity", "script", "v9oc8iipxs");
+        });
+    </script>
 
     <!-- Google Fonts: Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,13 +54,41 @@
         rel="stylesheet">
 
     <!-- Tailwind CSS (Estilos) -->
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Preconnect para Imagens -->
-    <link rel="preconnect" href="https://i.postimg.cc">
+    <!-- Configuração do Tailwind (Cores e Fontes) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#74131c',      // Deep Maroon/Red
+                            primary: '#9d1f28',   // Vibrant Red
+                            secondary: '#c06264', // Muted Rose/Red
+                            light: '#e4aaa7',     // Pale Pink
+                            bg: '#f9f5f4',        // Off-white/Cream
+                        }
+                    },
+                    animation: {
+                        'pulse-subtle': 'pulse-subtle 2s infinite ease-in-out',
+                    },
+                    keyframes: {
+                        'pulse-subtle': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.03)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
     <!-- Ícones Lucide -->
-
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
         html {
@@ -123,7 +184,9 @@
     <section class="relative pt-10 pb-20 md:py-28 overflow-hidden">
         <!-- Background Gradient -->
         <div class="absolute inset-0 bg-gradient-to-b from-brand-dark via-[#8a1520] to-brand-primary z-0"></div>
-
+        <div
+            class="absolute top-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 z-0 mix-blend-overlay">
+        </div>
 
         <div class="container mx-auto px-4 relative z-10 flex flex-col items-center text-center">
 
@@ -145,28 +208,16 @@
             <div class="flex flex-wrap justify-center gap-3 md:gap-4 mb-10 max-w-4xl">
                 <div
                     class="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 text-white text-xs md:text-sm font-semibold shadow-sm">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-4 h-4 text-brand-light">
-                        <path d="M20 6 9 17l-5-5" />
-                    </svg> 100% natural
+                    <i data-lucide="check" class="w-4 h-4 text-brand-light"></i> 100% natural
                 </div>
 
                 <div
                     class="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 text-white text-xs md:text-sm font-semibold shadow-sm">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-4 h-4 text-brand-light">
-                        <path d="M20 6 9 17l-5-5" />
-                    </svg> Com passo a passo claro
+                    <i data-lucide="check" class="w-4 h-4 text-brand-light"></i> Com passo a passo claro
                 </div>
                 <div
                     class="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 text-white text-xs md:text-sm font-semibold shadow-sm">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-4 h-4 text-brand-light">
-                        <path d="M20 6 9 17l-5-5" />
-                    </svg> Evolução em até 21 dias
+                    <i data-lucide="check" class="w-4 h-4 text-brand-light"></i> Evolução em até 21 dias
                 </div>
             </div>
 
@@ -200,8 +251,7 @@
                 <div class="flex justify-center mb-6">
                     <img src="https://i.postimg.cc/qvZV9JxB/Gemini-Generated-Image-17sreb17sreb17sr-(1).png"
                         alt="Sintomas da Candidíase"
-                        class="w-full max-w-xs h-auto rounded-xl shadow-lg mix-blend-multiply" loading="eager"
-                        fetchpriority="high" decoding="async" />
+                        class="w-full max-w-xs h-auto rounded-xl shadow-lg mix-blend-multiply" />
                 </div>
                 <h2 class="text-2xl md:text-4xl font-extrabold text-brand-dark leading-tight mb-4">
                     Se você está vivendo isso:
@@ -216,44 +266,20 @@
 
             <div class="grid md:grid-cols-2 gap-x-8 gap-y-4 max-w-3xl mx-auto">
                 <div class="flex items-start gap-3 p-3 bg-white rounded-lg shadow-sm border border-brand-light/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-6 h-6 text-brand-primary shrink-0 mt-0.5">
-                        <circle cx="12" cy="12" r="10" />
-                        <line x1="12" x2="12" y1="8" y2="12" />
-                        <line x1="12" x2="12.01" y1="16" y2="16" />
-                    </svg>
+                    <i data-lucide="alert-circle" class="w-6 h-6 text-brand-primary shrink-0 mt-0.5"></i>
                     <span class="text-slate-700 font-medium">Candidíase que “vai e volta”</span>
                 </div>
                 <div class="flex items-start gap-3 p-3 bg-white rounded-lg shadow-sm border border-brand-light/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-6 h-6 text-brand-primary shrink-0 mt-0.5">
-                        <circle cx="12" cy="12" r="10" />
-                        <line x1="12" x2="12" y1="8" y2="12" />
-                        <line x1="12" x2="12.01" y1="16" y2="16" />
-                    </svg>
+                    <i data-lucide="alert-circle" class="w-6 h-6 text-brand-primary shrink-0 mt-0.5"></i>
                     <span class="text-slate-700 font-medium">Coceira, corrimento ou ardência</span>
                 </div>
                 <div class="flex items-start gap-3 p-3 bg-white rounded-lg shadow-sm border border-brand-light/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-6 h-6 text-brand-primary shrink-0 mt-0.5">
-                        <circle cx="12" cy="12" r="10" />
-                        <line x1="12" x2="12" y1="8" y2="12" />
-                        <line x1="12" x2="12.01" y1="16" y2="16" />
-                    </svg>
+                    <i data-lucide="alert-circle" class="w-6 h-6 text-brand-primary shrink-0 mt-0.5"></i>
                     <span class="text-slate-700 font-medium">Vida íntima desconfortável</span>
                 </div>
 
                 <div class="flex items-start gap-3 p-3 bg-white rounded-lg shadow-sm border border-brand-light/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-6 h-6 text-brand-primary shrink-0 mt-0.5">
-                        <circle cx="12" cy="12" r="10" />
-                        <line x1="12" x2="12" y1="8" y2="12" />
-                        <line x1="12" x2="12.01" y1="16" y2="16" />
-                    </svg>
+                    <i data-lucide="alert-circle" class="w-6 h-6 text-brand-primary shrink-0 mt-0.5"></i>
                     <span class="text-slate-700 font-medium">Vergonha, medo e exaustão</span>
                 </div>
             </div>
@@ -326,8 +352,7 @@
                 <div class="flex justify-center mb-8">
                     <img src="https://i.postimg.cc/P5bfsNMG/Design-sem-nome-(4).png"
                         alt="Ilustração do ciclo da candidíase"
-                        class="w-full max-w-sm h-auto rounded-3xl shadow-2xl border-4 border-brand-light/20 hover:scale-105 transition-transform duration-500"
-                        loading="lazy" decoding="async" />
+                        class="w-full max-w-sm h-auto rounded-3xl shadow-2xl border-4 border-brand-light/20 hover:scale-105 transition-transform duration-500" />
                 </div>
 
                 <p>
@@ -370,37 +395,25 @@
 
                     <ul class="space-y-4 mb-8">
                         <li class="flex items-start gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-1" fill="none"
-                                stroke="currentColor" stroke-width="2">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
+                            <div class="bg-green-100 p-1.5 rounded-full text-green-700 shrink-0 mt-0.5"><i
+                                    data-lucide="check" class="w-5 h-5"></i></div>
                             <span class="text-lg text-slate-700">Reduzir a proliferação fúngica</span>
                         </li>
-
                         <li class="flex items-start gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-1" fill="none"
-                                stroke="currentColor" stroke-width="2">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
+                            <div class="bg-green-100 p-1.5 rounded-full text-green-700 shrink-0 mt-0.5"><i
+                                    data-lucide="check" class="w-5 h-5"></i></div>
                             <span class="text-lg text-slate-700">Recuperar o ecossistema intestinal</span>
                         </li>
-
                         <li class="flex items-start gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-1" fill="none"
-                                stroke="currentColor" stroke-width="2">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
+                            <div class="bg-green-100 p-1.5 rounded-full text-green-700 shrink-0 mt-0.5"><i
+                                    data-lucide="check" class="w-5 h-5"></i></div>
                             <span class="text-lg text-slate-700">Fortalecer a imunidade mucosa</span>
                         </li>
-
                         <li class="flex items-start gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-1" fill="none"
-                                stroke="currentColor" stroke-width="2">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-                            <span class="text-lg font-bold text-brand-primary">
-                                Quebrar o ciclo da repetição
-                            </span>
+                            <div class="bg-green-100 p-1.5 rounded-full text-green-700 shrink-0 mt-0.5"><i
+                                    data-lucide="check" class="w-5 h-5"></i></div>
+                            <span class="text-lg text-slate-700 font-bold text-brand-primary">Quebrar o ciclo da
+                                repetição</span>
                         </li>
                     </ul>
 
@@ -410,20 +423,10 @@
                     </p>
 
                     <div class="flex gap-4 text-sm font-semibold text-slate-500 uppercase tracking-tight">
-                        <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-red-400">
-                                <circle cx="12" cy="12" r="10" />
-                                <path d="m15 9-6 6" />
-                                <path d="m9 9 6 6" />
-                            </svg> Sem promessas milagrosas</span>
-                        <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-red-400">
-                                <circle cx="12" cy="12" r="10" />
-                                <path d="m15 9-6 6" />
-                                <path d="m9 9 6 6" />
-                            </svg> Sem radicalismo</span>
+                        <span class="flex items-center gap-1"><i data-lucide="x-circle"
+                                class="w-4 h-4 text-red-400"></i> Sem promessas milagrosas</span>
+                        <span class="flex items-center gap-1"><i data-lucide="x-circle"
+                                class="w-4 h-4 text-red-400"></i> Sem radicalismo</span>
                     </div>
                 </div>
             </div>
@@ -525,12 +528,8 @@
                     <div
                         class="flex items-center justify-between p-4 md:p-5 border-b border-slate-100 hover:bg-slate-50 transition-colors">
                         <div class="flex items-center gap-3">
-                            <div class="bg-green-500 rounded p-1 shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="w-4 h-4 text-white">
-                                    <path d="M20 6 9 17l-5-5" />
-                                </svg></div>
+                            <div class="bg-green-500 rounded p-1 shrink-0"><i data-lucide="check"
+                                    class="w-4 h-4 text-white"></i></div>
                             <span class="text-slate-700 font-medium text-sm md:text-base">Livro de Receitas
                                 Antifúngicas</span>
                         </div>
@@ -542,12 +541,8 @@
                     <div
                         class="flex items-center justify-between p-4 md:p-5 border-b border-slate-100 hover:bg-slate-50 transition-colors">
                         <div class="flex items-center gap-3">
-                            <div class="bg-green-500 rounded p-1 shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="w-4 h-4 text-white">
-                                    <path d="M20 6 9 17l-5-5" />
-                                </svg></div>
+                            <div class="bg-green-500 rounded p-1 shrink-0"><i data-lucide="check"
+                                    class="w-4 h-4 text-white"></i></div>
                             <span class="text-slate-700 font-medium text-sm md:text-base">Guia de Chás
                                 Antifúngicos</span>
                         </div>
@@ -559,12 +554,8 @@
                     <div
                         class="flex items-center justify-between p-4 md:p-5 border-b border-slate-100 hover:bg-slate-50 transition-colors">
                         <div class="flex items-center gap-3">
-                            <div class="bg-green-500 rounded p-1 shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="w-4 h-4 text-white">
-                                    <path d="M20 6 9 17l-5-5" />
-                                </svg></div>
+                            <div class="bg-green-500 rounded p-1 shrink-0"><i data-lucide="check"
+                                    class="w-4 h-4 text-white"></i></div>
                             <span class="text-slate-700 font-medium text-sm md:text-base">Cronograma e Rotina para os 21
                                 dias</span>
                         </div>
@@ -576,12 +567,8 @@
                     <div
                         class="flex items-center justify-between p-4 md:p-5 border-b border-slate-100 hover:bg-slate-50 transition-colors">
                         <div class="flex items-center gap-3">
-                            <div class="bg-green-500 rounded p-1 shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="w-4 h-4 text-white">
-                                    <path d="M20 6 9 17l-5-5" />
-                                </svg></div>
+                            <div class="bg-green-500 rounded p-1 shrink-0"><i data-lucide="check"
+                                    class="w-4 h-4 text-white"></i></div>
                             <span class="text-slate-700 font-medium text-sm md:text-base">Lista de Compras sem
                                 Risco</span>
                         </div>
@@ -593,12 +580,8 @@
                     <div
                         class="flex items-center justify-between p-4 md:p-5 border-b border-slate-100 hover:bg-slate-50 transition-colors">
                         <div class="flex items-center gap-3">
-                            <div class="bg-green-500 rounded p-1 shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="w-4 h-4 text-white">
-                                    <path d="M20 6 9 17l-5-5" />
-                                </svg></div>
+                            <div class="bg-green-500 rounded p-1 shrink-0"><i data-lucide="check"
+                                    class="w-4 h-4 text-white"></i></div>
                             <span class="text-slate-700 font-medium text-sm md:text-base">Guia de Suplementação
                                 Natural</span>
                         </div>
@@ -634,8 +617,7 @@
     <div class="bg-white pb-16">
         <div class="container mx-auto px-4 max-w-5xl flex justify-center">
             <img src="https://i.postimg.cc/x1smDs5r/Gemini-Generated-Image-xf6uhbxf6uhbxf6u.png"
-                alt="Ilustração mulheres felizes" class="w-full h-auto rounded-3xl shadow-lg border-4 border-white"
-                loading="lazy" decoding="async" />
+                alt="Ilustração mulheres felizes" class="w-full h-auto rounded-3xl shadow-lg border-4 border-white" />
         </div>
     </div>
 
@@ -648,61 +630,29 @@
 
             <div class="flex flex-wrap justify-center gap-3 md:gap-4">
                 <span
-                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-4 h-4">
-                        <path d="M20 6 9 17l-5-5" />
-                    </svg> Candidíase Recorrente</span>
+                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><i
+                        data-lucide="check" class="w-4 h-4"></i> Candidíase Recorrente</span>
                 <span
-                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-4 h-4">
-                        <path d="M20 6 9 17l-5-5" />
-                    </svg> Candidíase Vaginal</span>
+                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><i
+                        data-lucide="check" class="w-4 h-4"></i> Candidíase Vaginal</span>
                 <span
-                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-4 h-4">
-                        <path d="M20 6 9 17l-5-5" />
-                    </svg> Candidíase + Gardnerella</span>
+                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><i
+                        data-lucide="check" class="w-4 h-4"></i> Candidíase + Gardnerella</span>
                 <span
-                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-4 h-4">
-                        <path d="M20 6 9 17l-5-5" />
-                    </svg> Fungos na pele</span>
+                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><i
+                        data-lucide="check" class="w-4 h-4"></i> Fungos na pele</span>
                 <span
-                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-4 h-4">
-                        <path d="M20 6 9 17l-5-5" />
-                    </svg> Micose nas unhas</span>
+                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><i
+                        data-lucide="check" class="w-4 h-4"></i> Micose nas unhas</span>
                 <span
-                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-4 h-4">
-                        <path d="M20 6 9 17l-5-5" />
-                    </svg> Caspa / Dermatite</span>
+                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><i
+                        data-lucide="check" class="w-4 h-4"></i> Caspa / Dermatite</span>
                 <span
-                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-4 h-4">
-                        <path d="M20 6 9 17l-5-5" />
-                    </svg> Desconfortos intestinais</span>
+                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><i
+                        data-lucide="check" class="w-4 h-4"></i> Desconfortos intestinais</span>
                 <span
-                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-4 h-4">
-                        <path d="M20 6 9 17l-5-5" />
-                    </svg> Imunidade Baixa</span>
+                    class="bg-white text-[#046c4e] px-4 py-2 rounded-full border border-emerald-200 font-semibold shadow-sm flex items-center gap-2"><i
+                        data-lucide="check" class="w-4 h-4"></i> Imunidade Baixa</span>
             </div>
         </div>
     </section>
@@ -712,8 +662,7 @@
         <div class="container mx-auto px-4 max-w-4xl flex flex-col md:flex-row items-center gap-8">
             <div class="shrink-0">
                 <img src="https://i.postimg.cc/B6zmW3tG/Design-sem-nome-(3).png" alt="Nutricionista Bruna Wassouf"
-                    class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-brand-bg shadow-xl"
-                    loading="lazy" decoding="async" />
+                    class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-brand-bg shadow-xl" />
             </div>
             <div class="text-center md:text-left">
                 <span class="uppercase text-brand-primary text-sm font-bold tracking-widest mb-2 block">A
@@ -725,8 +674,7 @@
                     repetição.
                 </p>
                 <div class="mt-4 flex items-center justify-center md:justify-start gap-2">
-                    <img src="https://i.postimg.cc/FsdkTr67/7641727.png" alt="Verificado" class="w-5 h-5 opacity-75"
-                        loading="lazy" decoding="async" />
+                    <img src="https://i.postimg.cc/FsdkTr67/7641727.png" alt="Verificado" class="w-5 h-5 opacity-75" />
                     <span class="text-sm text-slate-500 font-medium">CRN 19615</span>
                 </div>
             </div>
@@ -741,26 +689,22 @@
                 <!-- P1 -->
                 <div class="group">
                     <img src="https://i.postimg.cc/fLmCWrDW/IMG-3811.jpg" alt="Depoimento 1"
-                        class="w-full h-auto rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 group-hover:scale-[1.02] transition-transform duration-300"
-                        loading="lazy" decoding="async" />
+                        class="w-full h-auto rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 group-hover:scale-[1.02] transition-transform duration-300" />
                 </div>
                 <!-- P2 -->
                 <div class="group">
                     <img src="https://i.postimg.cc/pXxGrR9b/IMG-1572.jpg" alt="Depoimento 2"
-                        class="w-full h-auto rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 group-hover:scale-[1.02] transition-transform duration-300"
-                        loading="lazy" decoding="async" />
+                        class="w-full h-auto rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 group-hover:scale-[1.02] transition-transform duration-300" />
                 </div>
                 <!-- P3 -->
                 <div class="group">
                     <img src="https://i.postimg.cc/XJCHGvcK/IMG-1279.jpg" alt="Depoimento 3"
-                        class="w-full h-auto rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 group-hover:scale-[1.02] transition-transform duration-300"
-                        loading="lazy" decoding="async" />
+                        class="w-full h-auto rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 group-hover:scale-[1.02] transition-transform duration-300" />
                 </div>
                 <!-- P4 (Novo) -->
                 <div class="group">
                     <img src="https://i.postimg.cc/YCh3V9G0/IMG-1972.jpg" alt="Depoimento 4"
-                        class="w-full h-auto rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 group-hover:scale-[1.02] transition-transform duration-300"
-                        loading="lazy" decoding="async" />
+                        class="w-full h-auto rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 group-hover:scale-[1.02] transition-transform duration-300" />
                 </div>
             </div>
         </div>
@@ -822,33 +766,19 @@
                         onclick="initiateCheckout(event)"
                         class="flex items-center justify-center w-full bg-brand-primary hover:bg-brand-dark text-white font-bold py-4 rounded-full shadow-lg transition-all transform hover:scale-[1.02] active:scale-95 text-base md:text-lg uppercase tracking-wide group animate-pulse-subtle">
                         <span>ACESSO IMEDIATO</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform">
-                            <path d="M5 12h14" />
-                            <path d="m12 5 7 7-7 7" />
-                        </svg>
+                        <i data-lucide="arrow-right"
+                            class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"></i>
                     </a>
                 </div>
 
                 <!-- Footer Icons -->
                 <div class="flex flex-col gap-2 items-center justify-center text-slate-500 text-xs font-medium">
                     <div class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="w-4 h-4 text-green-500">
-                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
-                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                        </svg>
+                        <i data-lucide="lock" class="w-4 h-4 text-green-500"></i>
                         <span>Compra 100% Segura</span>
                     </div>
                     <div class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="w-4 h-4 text-brand-primary">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="m9 12 2 2 4-4" />
-                        </svg>
+                        <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-primary"></i>
                         <span>Garantia de 7 dias incondicional</span>
                     </div>
                 </div>
@@ -869,12 +799,7 @@
                 <div class="flex flex-col items-center text-center p-4">
                     <div
                         class="w-12 h-12 bg-brand-bg rounded-full flex items-center justify-center text-brand-primary mb-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="w-6 h-6">
-                            <rect width="20" height="16" x="2" y="4" rx="2" />
-                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                        </svg>
+                        <i data-lucide="mail" class="w-6 h-6"></i>
                     </div>
                     <h3 class="font-bold text-brand-dark mb-2 uppercase text-sm">Acesse seu e-mail</h3>
                     <p class="text-sm text-slate-600 leading-snug">
@@ -886,13 +811,7 @@
                 <div class="flex flex-col items-center text-center p-4 md:border-l md:border-r border-slate-100">
                     <div
                         class="w-12 h-12 bg-brand-bg rounded-full flex items-center justify-center text-brand-primary mb-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="w-6 h-6">
-                            <path d="M12 13v8l-4-4" />
-                            <path d="m12 21 4-4" />
-                            <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284" />
-                        </svg>
+                        <i data-lucide="cloud-download" class="w-6 h-6"></i>
                     </div>
                     <h3 class="font-bold text-brand-dark mb-2 uppercase text-sm">Acesso ao Produto</h3>
                     <p class="text-sm text-slate-600 leading-snug">
@@ -904,13 +823,7 @@
                 <div class="flex flex-col items-center text-center p-4">
                     <div
                         class="w-12 h-12 bg-brand-bg rounded-full flex items-center justify-center text-brand-primary mb-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="w-6 h-6">
-                            <path d="M7 10v12" />
-                            <path
-                                d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
-                        </svg>
+                        <i data-lucide="thumbs-up" class="w-6 h-6"></i>
                     </div>
                     <h3 class="font-bold text-brand-dark mb-2 uppercase text-sm">Tudo Pronto!</h3>
                     <p class="text-sm text-slate-600 leading-snug">
@@ -933,12 +846,8 @@
                     class="w-full text-left p-5 bg-slate-50 rounded-xl font-bold text-slate-700 hover:bg-slate-100 flex justify-between items-center group transition-all"
                     onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.icon').classList.toggle('rotate-45');">
                     <span>O que é o Plano Antifúngico?</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon w-6 h-6 text-slate-400 group-hover:text-brand-primary transition-transform duration-300">
-                        <path d="M5 12h14" />
-                        <path d="M12 5v14" />
-                    </svg>
+                    <i data-lucide="plus"
+                        class="icon w-6 h-6 text-slate-400 group-hover:text-brand-primary transition-transform duration-300"></i>
                 </button>
                 <div
                     class="hidden p-5 text-slate-600 bg-white border border-slate-50 text-sm leading-relaxed rounded-b-xl">
@@ -952,12 +861,8 @@
                     class="w-full text-left p-5 bg-slate-50 rounded-xl font-bold text-slate-700 hover:bg-slate-100 flex justify-between items-center group transition-all"
                     onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.icon').classList.toggle('rotate-45');">
                     <span>E gestante, lactante, tentantes, celíacos e alérgicos?</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon w-6 h-6 text-slate-400 group-hover:text-brand-primary transition-transform duration-300">
-                        <path d="M5 12h14" />
-                        <path d="M12 5v14" />
-                    </svg>
+                    <i data-lucide="plus"
+                        class="icon w-6 h-6 text-slate-400 group-hover:text-brand-primary transition-transform duration-300"></i>
                 </button>
                 <div
                     class="hidden p-5 text-slate-600 bg-white border border-slate-50 text-sm leading-relaxed rounded-b-xl">
@@ -971,12 +876,8 @@
                     class="w-full text-left p-5 bg-slate-50 rounded-xl font-bold text-slate-700 hover:bg-slate-100 flex justify-between items-center group transition-all"
                     onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.icon').classList.toggle('rotate-45');">
                     <span>O preço realmente é esse?</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon w-6 h-6 text-slate-400 group-hover:text-brand-primary transition-transform duration-300">
-                        <path d="M5 12h14" />
-                        <path d="M12 5v14" />
-                    </svg>
+                    <i data-lucide="plus"
+                        class="icon w-6 h-6 text-slate-400 group-hover:text-brand-primary transition-transform duration-300"></i>
                 </button>
                 <div
                     class="hidden p-5 text-slate-600 bg-white border border-slate-50 text-sm leading-relaxed rounded-b-xl">
@@ -990,12 +891,8 @@
                     class="w-full text-left p-5 bg-slate-50 rounded-xl font-bold text-slate-700 hover:bg-slate-100 flex justify-between items-center group transition-all"
                     onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.icon').classList.toggle('rotate-45');">
                     <span>Como vou receber o meu acesso?</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon w-6 h-6 text-slate-400 group-hover:text-brand-primary transition-transform duration-300">
-                        <path d="M5 12h14" />
-                        <path d="M12 5v14" />
-                    </svg>
+                    <i data-lucide="plus"
+                        class="icon w-6 h-6 text-slate-400 group-hover:text-brand-primary transition-transform duration-300"></i>
                 </button>
                 <div
                     class="hidden p-5 text-slate-600 bg-white border border-slate-50 text-sm leading-relaxed rounded-b-xl">
@@ -1008,12 +905,8 @@
                     class="w-full text-left p-5 bg-slate-50 rounded-xl font-bold text-slate-700 hover:bg-slate-100 flex justify-between items-center group transition-all"
                     onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.icon').classList.toggle('rotate-45');">
                     <span>Se eu tiver dúvidas, consigo tirar?</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon w-6 h-6 text-slate-400 group-hover:text-brand-primary transition-transform duration-300">
-                        <path d="M5 12h14" />
-                        <path d="M12 5v14" />
-                    </svg>
+                    <i data-lucide="plus"
+                        class="icon w-6 h-6 text-slate-400 group-hover:text-brand-primary transition-transform duration-300"></i>
                 </button>
                 <div
                     class="hidden p-5 text-slate-600 bg-white border border-slate-50 text-sm leading-relaxed rounded-b-xl">
@@ -1040,12 +933,8 @@
                 <a href="#checkout"
                     class="flex items-center justify-center w-full bg-[#22c55e] hover:bg-[#1da64d] text-white font-bold py-4 rounded-full shadow-lg transition-all transform hover:scale-[1.02] active:scale-95 text-base md:text-lg uppercase tracking-wide group">
                     <span>QUERO ACESSO AO PLANO ANTIFÚNGICO</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform">
-                        <path d="M5 12h14" />
-                        <path d="m12 5 7 7-7 7" />
-                    </svg>
+                    <i data-lucide="arrow-right"
+                        class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"></i>
                 </a>
             </div>
         </div>
@@ -1069,65 +958,25 @@
         function initiateCheckout(event) {
             if (event) event.preventDefault();
 
-            try {
-                if (typeof fbq === 'function') {
-                    fbq('track', 'InitiateCheckout');
-                }
-                if (typeof clarity === 'function') {
-                    clarity('set', 'cta', 'checkout');
-                }
-            } catch (e) {
-                console.warn('Erro no tracking', e);
+            // Garantia de disparo dos eventos
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout');
+            }
+            if (typeof clarity === 'function') {
+                clarity('set', 'cta', 'checkout');
             }
 
+            // Redirecionamento seguro após 150ms
             if (event) {
                 const targetUrl = event.currentTarget.href;
-                setTimeout(() => {
+                setTimeout(function () {
                     window.location.href = targetUrl;
-                }, 80);
+                }, 150);
             }
         }
-
+        lucide.createIcons();
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-
-    <!-- ================= TRACKING ================= -->
-
-    <!-- META PIXEL (Defer Pattern) -->
-    <script defer>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.defer = true;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-
-        fbq('init', '611806261547032');
-        fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=611806261547032&ev=PageView&noscript=1" />
-    </noscript>
-
-    <!-- MICROSOFT CLARITY (Delayed) -->
-    <script>
-        setTimeout(function () {
-            (function (c, l, a, r, i, t, y) {
-                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-            })(window, document, "clarity", "script", "v9oc8iipxs");
-        }, 3000);
-    </script>
-
-    <!-- UTMIFY (Defer) -->
-    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" defer></script>
 </body>
 
 </html>
