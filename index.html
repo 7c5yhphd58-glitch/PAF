@@ -762,17 +762,22 @@
                 <!-- CTA Button (Retained Style, New Container) -->
                 <div class="shine-border bg-brand-bg/30 p-2 rounded-full mb-6 max-w-sm mx-auto relative group">
                     <a href="https://one-health-wa.pay.yampi.com.br/r/P1T29RXPKE" data-utmify onclick="
-                            fbq('track', 'InitiateCheckout', {
-                                value: 67.00,
-                                currency: 'BRL'
-                            });
-                            setTimeout(() => window.location = this.href, 300);
-                            return false;
-                        "
-                        class="flex items-center justify-center w-full bg-brand-primary hover:bg-brand-dark text-white font-bold py-4 rounded-full shadow-lg transition-all transform hover:scale-[1.02] active:scale-95 text-base md:text-lg uppercase tracking-wide group animate-pulse-subtle">
-                        <span>ACESSO IMEDIATO</span>
-                        <i data-lucide="arrow-right"
-                            class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"></i>
+     if (typeof fbq === 'function') {
+       fbq('track', 'InitiateCheckout', {
+         value: 67.00,
+         currency: 'BRL',
+         content_name: 'Plano Antifúngico',
+         content_type: 'product'
+       });
+     }
+
+     setTimeout(() => {
+       window.location.href = this.href;
+     }, 1200);
+
+     return false;
+   " class="flex items-center justify-center w-full bg-brand-primary hover:bg-brand-dark text-white font-bold py-4 rounded-full shadow-lg transition-all transform hover:scale-[1.02] active:scale-95 text-base md:text-lg uppercase tracking-wide">
+                        ACESSO IMEDIATO
                     </a>
                 </div>
 
@@ -962,6 +967,22 @@
     <script>
         lucide.createIcons();
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        // ViewCheckoutSection Tracking
+        document.addEventListener('DOMContentLoaded', function () {
+            var checkoutSection = document.getElementById('checkout');
+            if (checkoutSection && typeof IntersectionObserver === 'function') {
+                var observer = new IntersectionObserver(function (entries) {
+                    if (entries[0].isIntersecting) {
+                        if (typeof fbq === 'function') {
+                            fbq('trackCustom', 'ViewCheckoutSection');
+                        }
+                        observer.disconnect();
+                    }
+                }, { threshold: 0.2 }); // Trigger when 20% of the section is visible
+                observer.observe(checkoutSection);
+            }
+        });
     </script>
 </body>
 
